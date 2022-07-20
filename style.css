@@ -193,7 +193,7 @@
      header {
          flex-direction: column;
          height: fit-content;
-
+         align-items: center;
      }
 
      .header-info {
@@ -214,7 +214,4 @@
          grid-template-columns: repeat(1, 1fr);
      }
 
-     footer {
-         display: none;
-     }
  }
