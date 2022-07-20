@@ -154,11 +154,24 @@
      border-radius: 5px;
  }
 
+ .view-button {
+     text-align: center;
+     display: none;
+ }
+
+ .view {
+     text-decoration: none;
+     color: white;
+     background-color: #DD0000;
+     padding: 15px 30px;
+     border-radius: 7px;
+ }
+
  /* ------footer styles----- */
 
  footer {
      background-color: #161616;
-     height: 400px;
+
      color: #FFFFFF;
      text-align: center;
 
@@ -192,26 +205,51 @@
  @media only screen and (max-width:688px) {
      header {
          flex-direction: column;
+         width: fit-content;
          height: fit-content;
          align-items: center;
      }
 
-     .header-info {
-         width: 258px;
-         height: 100%;
+
+     .main-container {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
      }
 
-     .header-img {
-         width: 233px;
+     .blogs {
+         grid-template-columns: repeat(1, 1fr);
+         align-items: center;
+     }
+
+     .footer-link {
+         display: flex;
+         flex-direction: column;
+         height: 50px;
+         align-items: center;
+     }
+ }
+
+ /* ------tablet devices------ */
+
+ @media only screen and (min-width: 688px) and (max-width: 992px) {
+     header {
+         width: fit-content;
+         height: fit-content;
      }
 
      .main-container {
          display: flex;
          flex-direction: column;
+         align-items: center;
      }
 
      .blogs {
-         grid-template-columns: repeat(1, 1fr);
+         grid-template-columns: repeat(2, 1fr);
+         align-items: center;
      }
 
+     .view-button {
+         display: block;
+     }
  }

@@ -94,7 +94,6 @@ p {
 
 .box-1 {
     text-decoration: none;
-    align-content: center;
     color: black;
     width: 252px;
     height: 64px;
@@ -157,7 +156,7 @@ p {
 
 footer {
     background-color: #161616;
-    height: 400px;
+
     color: #FFFFFF;
     text-align: center;
 }
