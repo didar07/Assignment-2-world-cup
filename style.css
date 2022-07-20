@@ -23,6 +23,8 @@
  h1 {
      font-size: 70px;
      margin-left: 20px;
+     animation: sliding 2s ease-in-out 0s infinite alternate;
+     animation-play-state: running;
  }
 
  p {
@@ -42,11 +44,42 @@
      margin-left: 20px;
      padding: 15px 30px;
      border-radius: 7px;
+
+ }
+
+ .live-button:hover {
+     padding: 15px 50px;
+     background-color: springgreen;
+     transition: padding 1s linear;
  }
 
  .header-img img {
      width: 581px;
      height: 613px;
+ }
+
+ /* -----animation style----- */
+
+ @keyframes sliding {
+     0% {
+         color: white;
+     }
+
+     25% {
+         color: aqua;
+     }
+
+     50% {
+         color: crimson;
+     }
+
+     75% {
+         color: gold;
+     }
+
+     100% {
+         color: blueviolet;
+     }
  }
 
  /* -------main section style----- */
@@ -82,8 +115,35 @@
  .box-2,
  .box-3 {
      border-radius: 7px;
-     margin-left: 20px;
+     padding-top: 5px;
+     margin-left: 25px;
      margin-top: 25px;
      text-align: center;
+ }
 
+ .main-container {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+ }
+
+ .blogs {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     column-gap: 25px;
+     row-gap: 30px;
+     justify-items: center;
+ }
+
+ .blog-item {
+     box-shadow: 5px 5px 20px lightgray;
+     border-radius: 10px;
+ }
+
+ .transfer-button {
+     text-decoration: none;
+     color: black;
+     border: 1px solid black;
+     padding: 5px 5px;
+     border-radius: 5px;
  }
