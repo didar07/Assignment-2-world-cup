@@ -94,10 +94,11 @@ p {
 
 .box-1 {
     text-decoration: none;
+    align-content: center;
     color: black;
     width: 252px;
     height: 64px;
-    background-color: #FFFFFF;
+    background-color: red;
 }
 
 .box-2 {
