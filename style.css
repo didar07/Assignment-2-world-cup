@@ -93,21 +93,26 @@
  }
 
  .box-1 {
+     text-decoration: none;
+     color: black;
      width: 252px;
      height: 64px;
      background-color: #FFFFFF;
  }
 
  .box-2 {
+     text-decoration: none;
+     color: black;
      width: 252px;
      height: 64px;
      background-color: #FFFFFF;
  }
 
  .box-3 {
+     text-decoration: none;
+     color: black;
      width: 252px;
      height: 64px;
-     color: #FFFFFF;
      background-color: #DD0000;
  }
 
@@ -119,6 +124,7 @@
      margin-left: 25px;
      margin-top: 25px;
      text-align: center;
+     padding-right: 5px;
  }
 
  .main-container {
@@ -175,27 +181,4 @@
      color: #FFFFFF;
      margin-left: 35px;
      margin-right: 20px;
- }
-
- /* ---------styles for upcoming match------- */
-
-
- .matches {
-     display: grid;
-     grid-template-columns: repeat(3, 1fr);
-     column-gap: 20px;
-     row-gap: 20px;
- }
-
- .match {
-     text-align: center;
-     box-shadow: 5px 5px 20px lightgray;
-     border-radius: 10px;
-     padding: 15px 25px 15px 20px;
-
- }
-
- .flag {
-     display: flex;
-     margin-left: 10px;
  }
