@@ -176,3 +176,11 @@
      margin-left: 35px;
      margin-right: 20px;
  }
+
+ /* ---------styles for upcoming match------- */
+
+ .flag {
+     display: flex;
+     margin-left: 10px;
+
+ }
